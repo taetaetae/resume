@@ -67,7 +67,7 @@ content:
         sub_title: Software Engineer
         caption: 2014.05 ~ 현재
         description: | # this will include new lines to allow paragraphs
-          **네이버 쇼핑**ㆍ[*https://shopping.naver.com*](https://shopping.naver.com/ns/home/fashion-beauty)<br>
+          **네이버 쇼핑**ㆍ[*https://shopping.naver.com*](https://shopping.naver.com)<br>
           - **데이터 수집 및 상품 매칭 프로세스 개선 및 운영**(Kafka, Batch 활용)<br>
           ㆍ 대규모 상품 데이터를 실시간으로 처리 및 매칭하는 데이터 파이프라인 최적화<br>
           ㆍ 데이터 적재 및 변환 성능 개선으로 배치 처리 시간 30% 단축<br>
