@@ -92,7 +92,7 @@ content:
           **V Live**ㆍ[*http://www.vlive.tv*](http://www.vlive.tv/)<br>
           - 1,000만 사용자 대상 방송 알림 속도 개선(11분 → 30초)으로 푸시 알림 시스템 성능 95% 향상 ([*관련 블로깅*](https://taetaetae.github.io/2019/01/02/faster-parallel-processes/))<br>
           ㆍ 기존 순차 처리 방식에서 **병렬 처리 및 메시지 큐(RabbitMQ) 활용**을 통해 대량 트래픽 처리 성능 개선<br>
-          ㆍ Redis Pub/Sub을 활용하여 알림 전송 속도 최적화 및 네트워크 부하 감소<br>
+          ㆍ Redis 키 파티셔닝을 통해 알림 전송 속도 최적화 및 네트워크 부하 감소br>
           - **서비스 전면 개편: Monolithic → MSA 구조 전환** 으로 확장성 및 장애 대응력 강화<br>
           ㆍ **Event Sourcing, Circuit Breaker, 모듈 분리**를 적용하여 마이크로서비스 간 결합도를 낮추고 장애 격리 가능하도록 설계<br>
           ㆍ Kubernetes 기반 컨테이너 오케스트레이션 도입으로 배포 유연성 확보<br>
