@@ -68,38 +68,38 @@ content:
         caption: 2014.05 ~ 현재
         description: | # this will include new lines to allow paragraphs
           **네이버 쇼핑**ㆍ[*https://shopping.naver.com*](https://shopping.naver.com)ㆍ<small>(2022.02~현재)</small><br>
-          - **트래픽 모니터링 및 대응 시스템 구축**<br>
+          - 트래픽 모니터링 및 대응 시스템 구축<br>
           ㆍ Nginx VTS 모듈 활용 실시간 트래픽 감지 및 임계치(예: QPS 1,000 이상) 초과 시 알림 발송<br>
-          ㆍ 엑세스 로그를 활용한 ELK 스택 기반 트래픽 대시보드 구성 및 분석 시간 약 5분 → 1분 이내로 단축(최대 80% 감소)<br>
+          ㆍ 엑세스 로그를 활용한 ELK 스택 기반 트래픽 대시보드 구성 및 분석 시간 약 5분 → 1분 이내로 단축 (최대 80% 감소)<br>
           ㆍ 메트릭 수집(Prometheus + Grafana) 및 대시보드 구성 – 응답 시간·DB 쿼리 성능 분석으로 병목 원인 파악<br>
           ㆍ Nginx Rate Limit 설정을 통한 비정상 트래픽 차단으로 서버 부하를 100%에서 60%로 감소, 안정적인 트래픽 처리 환경 확보<br>
-          - **신규 서비스 출시간 안정성 및 고가용성 확보**<br>
+          - 신규 서비스 출시간 안정성 및 고가용성 확보<br>
           ㆍ Fallback Cache 도입으로 Remote Cache(Redis) 만료 시 외부 응답 지연으로 인한 빈 응답 문제 해소<br>
           ㆍ 카오스 엔지니어링(Toxiproxy) 도입으로 네트워크 장애 재현, 재시도·타임아웃·연결 복구 등 Fallback Cache 로직 검증<br>
           ㆍ 장애 테스트를 통해 Fallback Cache 결함 발견(복구 전환 실패) 및 최적화하여, 서비스 출시 후 6개월간 무장애 운영 달성<br>
-          - **EDA 기반 고가용성 데이터 가공 파이프라인 구축**<br>
+          - EDA 기반 고가용성 데이터 가공 파이프라인 구축<br>
           ㆍ 유저 행동 기반 개인화 추천 및 실시간 랭킹/피드 서비스 구현<br>
           ㆍ Kafka 기반 실시간 스트리밍 데이터 처리로 사용자 이벤트를 분석 및 추천 시스템 연계<br>
           ㆍ Redis를 활용하여 준 실시간 랭킹 계산 및 피드 노출 최적화<br>
 
-          **V Live**ㆍ[*http://www.vlive.tv*](http://www.vlive.tv/)ㆍ(2018.08~2022.02)<br>
+          **V Live**ㆍ[*http://www.vlive.tv*](http://www.vlive.tv/)ㆍ<small>(2018.08~2022.02)</small><br>
           - 1,000만 사용자 대상 방송 알림 속도 개선(11분 → 30초)으로 푸시 알림 시스템 성능 95% 향상 ([*관련 블로깅*](https://taetaetae.github.io/2019/01/02/faster-parallel-processes/))<br>
           ㆍ 기존 프로세스의 문제점 도출, 플래닝 및 설계, 구현 및 단계적 배포까지 전 과정 참여<br>
           ㆍ 메시지 큐(RabbitMQ) 방식의 병렬 처리 방식을 개선하여 고성능 처리 최적화<br>
           ㆍ Redis 키 파티셔닝을 통해 알림 전송 속도 최적화 및 네트워크 부하 감소<br>
           - 서비스 전면 개편: Monolithic → MSA 구조 전환 으로 확장성 및 장애 대응력 강화<br>
-          ㆍ 이벤트 기반 아키텍쳐 도입, Circuit Breaker, 모듈 분리를 적용하여 마이크로서비스 간 결합도를 낮추고 장애 격리 가능하도록 설계<br>
+          ㆍ EDA 도입, Circuit Breaker, 모듈 분리를 적용하여 마이크로서비스 간 결합도를 낮추고 장애 격리 가능하도록 설계<br>
           ㆍ Kubernetes 기반 컨테이너 오케스트레이션 도입으로 배포 유연성 확보<br>
           - CI/CD 자동화 및 코드 품질 개선을 위한 정적 분석 도구(SonarQube) 및 온라인 코드 리뷰 도입 ([*관련 블로깅*](https://taetaetae.github.io/2018/02/08/jenkins-sonar-github-integration/))<br>
           - Batch 무중단 배포 적용을 통해 서비스 연속성 유지 및 장애 최소화 ([*관련 블로깅*](https://taetaetae.github.io/2019/10/13/batch-nondisruptive-deploy/))<br>
 
-          **네이버페이 카드 직가맹 시스템 (Payment Gateway)**ㆍ(2016.04~2018.08)<br>
+          **네이버페이 카드 직가맹 시스템 (Payment Gateway)**ㆍ<small>(2016.04~2018.08)</small><br>
           - 프로젝트 초기 환경 셋팅 (빌드/배포 파이프라인 구축, CI/CD 설계, 서버 및 인프라 구성)<br>
           - Elastic Stack 기반 비즈니스 통합 모니터링 시스템 구축으로 서비스 장애 감지 및 이상 탐지 자동화 ([*관련 블로깅*](https://d2.naver.com/helloworld/3585246))<br>
           - 거래비 하락 모니터링 시스템 구축을 통해 비정상 거래 패턴 자동 감지 및 대응 시스템 마련 ([*관련 블로깅*](https://taetaetae.github.io/2018/05/31/anomaly-detection/))<br>
           - 트랜잭션 추적 및 성능 모니터링을 위한 분산 트레이싱 도입으로 결제 시스템 안정성 강화<br>
           
-          **네이버 날씨**ㆍ[*https://weather.naver.com*](https://weather.naver.com/)ㆍ(2014.05~2016.04)<br>
+          **네이버 날씨**ㆍ[*https://weather.naver.com*](https://weather.naver.com/)ㆍ<small>(2014.05~2016.04)</small><br>
           - CP사 수신 데이터 모니터링 툴 개발로 데이터 정합성 검증 및 장애 감지 자동화<br>
           - Crontab 기반 데이터 수집을 Spring Batch 및 Jenkins로 전환하여 데이터 흐름 시각화 및 운영 자동화<br>
           - 데이터 파이프라인 로깅 체계 구축으로 이상 데이터 탐지 및 처리 지연 문제 개선<br>
@@ -138,11 +138,11 @@ content:
       - layout: top-left
         title: Toy Project
         description: | # this will include new lines to allow paragraphs
-          **👨‍💻꿈꾸는 태태태의 공간ㆍ<a href="https://taetaetae.github.io/" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">https://taetaetae.github.io/</a>**
+          **👨‍💻꿈꾸는 태태태의 공간ㆍ<a href="https://taetaetae.github.io/" target="_blank" style="color: inherit;font-style: italic;">https://taetaetae.github.io/</a>**
           - 개인 기술블로그 (2016년 9월~)
           - 새로운 기술을 습득했거나 업무간 트러블 슈팅을 기록하며 공유
 
-          **Daily DevBlogㆍ<a href="http://daily-devblog.com/" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">http://daily-devblog.com/</a>**
+          **Daily DevBlogㆍ<a href="http://daily-devblog.com/" target="_blank" style="color: inherit;font-style: italic;">http://daily-devblog.com/</a>**
           - 기술블로그 구독서비스 (2018년 7월~)
           - Python, Flask
           - 매일 오전 10시마다 어제 등록된 글, 매주 월요일 오후 2시 지난주 인기글을 정리하여 메일 발송
@@ -151,26 +151,26 @@ content:
         title: ETC
         description: | # this will include new lines to allow paragraphs
           **발표**
-            - <a href="https://d2.naver.com/news/8012036" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">DEVIEW CAMPUS 2023 : 어서와, 성장은 처음이지?</a> - 2023.02.27
-            - <a href="https://festa.io/events/364" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">모두의 TOY STORY : Side Project 어디까지 가봤니?</a> - 2019.07.14
-            - <a href="https://taetaetae.github.io/2019/05/19/d-light-togetherthon-2019" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">GDG D.light together-thon 2019</a> - 2019.05.11
-            - <a href="https://archive.pycon.kr/2018/program/81" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">PYCON 2018 - Lightning talk : 파이썬으로 토이프로젝트 만들기</a> - 2018.08.19            
+            - <a href="https://d2.naver.com/news/8012036" target="_blank" style="color: inherit;font-style: italic;">DEVIEW CAMPUS 2023 : 어서와, 성장은 처음이지?</a> - 2023.02.27
+            - <a href="https://festa.io/events/364" target="_blank" style="color: inherit;font-style: italic;">모두의 TOY STORY : Side Project 어디까지 가봤니?</a> - 2019.07.14
+            - <a href="https://taetaetae.github.io/2019/05/19/d-light-togetherthon-2019" target="_blank" style="color: inherit;font-style: italic;">GDG D.light together-thon 2019</a> - 2019.05.11
+            - <a href="https://archive.pycon.kr/2018/program/81" target="_blank" style="color: inherit;font-style: italic;">PYCON 2018 - Lightning talk : 파이썬으로 토이프로젝트 만들기</a> - 2018.08.19            
 
           **기고**
-            - <a href="https://yozm.wishket.com/magazine/detail/2539" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">어제보다 1cm 더 성장하기 / 요즘 IT(커리어 리팩토링: 개발자의 성장법)</a> - 2024.04.11
-            - <a href="https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000005037115" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">readItzine 5호, 개발자의 일 / 교보문고</a> - 2022.08.15
-            - <a href="https://careerly.co.kr/profiles/105233" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">커리어리 큐레이션</a> - 2022.03.27 ~
-            - <a href="https://blog.naver.com/naver_diary/222110224274" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">네이버 공식 다이어리 : [네피셜] 내가 개발한 코드 한 줄로 전 세계 팬들이 행복할 수 있다면!</a> - 2020.10.08
-            - <a href="https://d2.naver.com/helloworld/3585246" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">네이버 D2 - helloworld : 내 서버에는 누가 들어오는 걸까</a> - 2018.04.30
+            - <a href="https://yozm.wishket.com/magazine/detail/2539" target="_blank" style="color: inherit;font-style: italic;">어제보다 1cm 더 성장하기 / 요즘 IT(커리어 리팩토링: 개발자의 성장법)</a> - 2024.04.11
+            - <a href="https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000005037115" target="_blank" style="color: inherit;font-style: italic;">readItzine 5호, 개발자의 일 / 교보문고</a> - 2022.08.15
+            - <a href="https://careerly.co.kr/profiles/105233" target="_blank" style="color: inherit;font-style: italic;">커리어리 큐레이션</a> - 2022.03.27 ~
+            - <a href="https://blog.naver.com/naver_diary/222110224274" target="_blank" style="color: inherit;font-style: italic;">네이버 공식 다이어리 : [네피셜] 내가 개발한 코드 한 줄로 전 세계 팬들이 행복할 수 있다면!</a> - 2020.10.08
+            - <a href="https://d2.naver.com/helloworld/3585246" target="_blank" style="color: inherit;font-style: italic;">네이버 D2 - helloworld : 내 서버에는 누가 들어오는 걸까</a> - 2018.04.30
 
           **서평**
-            - <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791140700288" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">이펙티브 엔지니어 / 이미령 옮김</a> - 2022.07.01
-            - <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791165920500" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">나만의 데이터 분석 플랫폼 엘라스틱 서치 / 주정남 지음</a> - 2021.03.26
-            - <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791160509519" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">심플 소프트웨어 / 이미령 옮김</a> - 2019.10.23
+            - <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791140700288" target="_blank" style="color: inherit;font-style: italic;">이펙티브 엔지니어 / 이미령 옮김</a> - 2022.07.01
+            - <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791165920500" target="_blank" style="color: inherit;font-style: italic;">나만의 데이터 분석 플랫폼 엘라스틱 서치 / 주정남 지음</a> - 2021.03.26
+            - <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?barcode=9791160509519" target="_blank" style="color: inherit;font-style: italic;">심플 소프트웨어 / 이미령 옮김</a> - 2019.10.23
             
           **기타**
             - 네이버 2022 신입사원 대상 사내 특강, '그런 개발자로 괜찮은가 (feat. 성장)' - 2022.11.30
-            - 네이버 2021 신입사원 멘토링 참여, <a href="https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=018&aid=0004836785" target="_blank" style="color: inherit;font-style: italic;font-weight: 300;">인터뷰 기사</a> - 2021.01.25
+            - 네이버 2021 신입사원 멘토링 참여, <a href="https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=018&aid=0004836785" target="_blank" style="color: inherit;font-style: italic;">인터뷰 기사</a> - 2021.01.25
 
   - title: Skill.
     layout: text # Type of content section (list/text)
