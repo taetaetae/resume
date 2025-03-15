@@ -55,8 +55,8 @@ about_title: About <mark>taetaetae</mark>
 about_profile_image: images/profile.png
 about_content: | # this will include new lines to allow paragraphs
   12년 차 백엔드 개발자로서, 1,000만 명 이상의 회원을 관리하고 대용량 데이터를 처리하며, 국내 및 글로벌 서비스를 포함한 대규모 트래픽을 처리하는 웹 서비스 운영과 개발을 경험했습니다. 동시에 읽기 쉽고 유지보수 가능한 코드를 작성하고, 정리와 꼼꼼함을 바탕으로 복잡한 시스템을 구조화하여 코드의 일관성, 성능 최적화, 기술 부채 해소를 통해 개발 과정에서 발생할 수 있는 문제를 사전에 방지하고 해결하는 데 기여하고 있습니다.<br>
-  개인의 성장뿐만 아니라 팀 전체가 함께 성장하는 문화를 만들어가는 데 관심이 많으며, 코드 리뷰, DevOps 개선, 지식 공유 등을 통해 개발 생산성을 높이고 있습니다.<br>
-  현재는 조직 내 시니어 개발자로써 트러블 슈팅, 성능 개선, 고성능 API 설계에 집중하며, 비즈니스 성장에 기여하는 개발자로서 지속적으로 발전하고자 합니다.
+  개인의 성장뿐만 아니라 팀 전체가 함께 성장하는 문화를 만들어가는 데 관심이 많습니다.<br>
+  현재는 조직 내 시니어 개발자로써 트러블 슈팅·성능 개선·고성능 API 설계에 집중하며 비즈니스 성장에 기여하고 있습니다.
 
 content:
   - title: Work Experience. # Title for the section
@@ -68,6 +68,7 @@ content:
         caption: 2014.05 ~ 현재
         description: | # this will include new lines to allow paragraphs
           **네이버 쇼핑**ㆍ[*https://shopping.naver.com*](https://shopping.naver.com)ㆍ<small>(2022.02~현재)</small><br>
+          - 서비스 주요 API 개발 및 데이터 파이프라인 운영<br>
           - 대규모 트래픽 처리 및 장애 대응을 위한 실시간 트래픽 모니터링 시스템 설계 및 구축<br>
           ㆍ 기존 장애 대응 방식(로그 분석 기반)이 비효율적이었으며, 평균 대응 시간이 5분 이상 소요됨<br>
           ㆍ Nginx VTS 모듈 및 Prometheus를 활용한 메트릭 기반 실시간 트래픽 모니터링 체계 구축(dry_run 검증 후 적용)<br>
@@ -83,7 +84,6 @@ content:
           ㆍ 유저 행동 기반 개인화 추천 및 실시간 랭킹/피드 서비스 구현<br>
           ㆍ Kafka 기반 실시간 스트리밍 데이터 처리로 사용자 이벤트를 분석 및 추천 시스템 연계<br>
           ㆍ 기존 배치 기반 랭킹 시스템(1시간 단위) → Redis를 활용하여 준 실시간 랭킹 계산 (최신성 개선)<br>
-          - 서비스 주요 API 개발 및 데이터 파이프라인 운영
           
           **V Live**ㆍ[*http://www.vlive.tv*](http://www.vlive.tv/)ㆍ<small>(2018.08~2022.02)</small><br>
           - 1,000만 사용자 대상 방송 알림 속도 개선(11분 → 30초)으로 푸시 알림 시스템 성능 95% 향상 ([*관련 블로깅*](https://taetaetae.github.io/2019/01/02/faster-parallel-processes/))<br>
