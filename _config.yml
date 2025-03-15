@@ -67,7 +67,7 @@ content:
         sub_title: Software Engineer
         caption: 2014.05 ~ 현재
         description: | # this will include new lines to allow paragraphs
-          **네이버 쇼핑**ㆍ[*https://shopping.naver.com*](https://shopping.naver.com) / (2022.02~현재)<br>
+          **네이버 쇼핑**ㆍ[*https://shopping.naver.com*](https://shopping.naver.com)ㆍ<small>(2022.02~현재)</small><br>
           - **트래픽 모니터링 및 대응 시스템 구축**<br>
           ㆍ Nginx VTS 모듈 활용 실시간 트래픽 감지 및 임계치(예: QPS 1,000 이상) 초과 시 알림 발송<br>
           ㆍ 엑세스 로그를 활용한 ELK 스택 기반 트래픽 대시보드 구성 및 분석 시간 약 5분 → 1분 이내로 단축(최대 80% 감소)<br>
@@ -82,7 +82,7 @@ content:
           ㆍ Kafka 기반 실시간 스트리밍 데이터 처리로 사용자 이벤트를 분석 및 추천 시스템 연계<br>
           ㆍ Redis를 활용하여 준 실시간 랭킹 계산 및 피드 노출 최적화<br>
 
-          **V Live**ㆍ[*http://www.vlive.tv*](http://www.vlive.tv/) / (2018.08~2022.02)<br>
+          **V Live**ㆍ[*http://www.vlive.tv*](http://www.vlive.tv/)ㆍ(2018.08~2022.02)<br>
           - 1,000만 사용자 대상 방송 알림 속도 개선(11분 → 30초)으로 푸시 알림 시스템 성능 95% 향상 ([*관련 블로깅*](https://taetaetae.github.io/2019/01/02/faster-parallel-processes/))<br>
           ㆍ 기존 프로세스의 문제점 도출, 플래닝 및 설계, 구현 및 단계적 배포까지 전 과정 참여<br>
           ㆍ 메시지 큐(RabbitMQ) 방식의 병렬 처리 방식을 개선하여 고성능 처리 최적화<br>
@@ -93,13 +93,13 @@ content:
           - CI/CD 자동화 및 코드 품질 개선을 위한 정적 분석 도구(SonarQube) 및 온라인 코드 리뷰 도입 ([*관련 블로깅*](https://taetaetae.github.io/2018/02/08/jenkins-sonar-github-integration/))<br>
           - Batch 무중단 배포 적용을 통해 서비스 연속성 유지 및 장애 최소화 ([*관련 블로깅*](https://taetaetae.github.io/2019/10/13/batch-nondisruptive-deploy/))<br>
 
-          **네이버페이 카드 직가맹 시스템 (Payment Gateway) / (2016.04~2018.08)**<br>
+          **네이버페이 카드 직가맹 시스템 (Payment Gateway)**ㆍ(2016.04~2018.08)<br>
           - 프로젝트 초기 환경 셋팅 (빌드/배포 파이프라인 구축, CI/CD 설계, 서버 및 인프라 구성)<br>
           - Elastic Stack 기반 비즈니스 통합 모니터링 시스템 구축으로 서비스 장애 감지 및 이상 탐지 자동화 ([*관련 블로깅*](https://d2.naver.com/helloworld/3585246))<br>
           - 거래비 하락 모니터링 시스템 구축을 통해 비정상 거래 패턴 자동 감지 및 대응 시스템 마련 ([*관련 블로깅*](https://taetaetae.github.io/2018/05/31/anomaly-detection/))<br>
           - 트랜잭션 추적 및 성능 모니터링을 위한 분산 트레이싱 도입으로 결제 시스템 안정성 강화<br>
           
-          **네이버 날씨**ㆍ[*https://weather.naver.com*](https://weather.naver.com/) / (2014.05~2016.04)<br>
+          **네이버 날씨**ㆍ[*https://weather.naver.com*](https://weather.naver.com/)ㆍ(2014.05~2016.04)<br>
           - CP사 수신 데이터 모니터링 툴 개발로 데이터 정합성 검증 및 장애 감지 자동화<br>
           - Crontab 기반 데이터 수집을 Spring Batch 및 Jenkins로 전환하여 데이터 흐름 시각화 및 운영 자동화<br>
           - 데이터 파이프라인 로깅 체계 구축으로 이상 데이터 탐지 및 처리 지연 문제 개선<br>
