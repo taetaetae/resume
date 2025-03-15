@@ -78,14 +78,9 @@ content:
           ㆍ 최근 정상 응답 데이터를 장기간 보관하고 주기적으로 갱신하는 Fallback Cache 설계를 적용해, Remote Cache 만료 및 외부 리소스 장애 발생 시에도 안정적인 데이터 제공 보장<br>
           ㆍ 카오스 엔지니어링(Toxiproxy) 도입 – 네트워크 장애를 인위적으로 재현하여 재시도, 타임아웃, 연결 복구 등 장애 대응 로직 검증<br>
           ㆍ 장애 테스트를 통해 Fallback Cache 결함 발견(복구 전환 실패) 및 최적화하여, 서비스 출시 후 6개월간 무장애 운영 달성<br>
-          
-          **쇼핑라이브**ㆍ[*https://shoppinglive.naver.com*](https://shoppinglive.naver.com/)<br>
           - **EDA 기반 고가용성 데이터 가공 파이프라인 구축**으로 유저 행동 기반 **개인화 추천 및 실시간 랭킹/피드 서비스 구현**<br>
           ㆍ Kafka 기반 실시간 스트리밍 데이터 처리로 사용자 이벤트를 분석 및 추천 시스템 연계<br>
-          ㆍ Redis를 활용하여 실시간 랭킹 계산 및 피드 노출 최적화<br>
-          - **팀 내 DevOps 활동 강화(CI/CD, GitHub Actions, 메신저 봇 자동화)로 업무 생산성 및 효율성 개선**<br>
-          ㆍ Jenkins, GitHub Actions를 활용한 배포 자동화로 코드 안정성과 운영 효율성 향상<br>
-          ㆍ 사내 메신저 봇을 활용한 빌드/배포 알림 및 장애 탐지 자동화<br>
+          ㆍ Redis를 활용하여 준 실시간 랭킹 계산 및 피드 노출 최적화<br>
 
           **V Live**ㆍ[*http://www.vlive.tv*](http://www.vlive.tv/)<br>
           - 1,000만 사용자 대상 방송 알림 속도 개선(11분 → 30초)으로 푸시 알림 시스템 성능 95% 향상 ([*관련 블로깅*](https://taetaetae.github.io/2019/01/02/faster-parallel-processes/))<br>
