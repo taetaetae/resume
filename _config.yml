@@ -84,14 +84,14 @@ content:
 
           **V Live**ㆍ[*http://www.vlive.tv*](http://www.vlive.tv/) / (2018.08~2022.02)<br>
           - 1,000만 사용자 대상 방송 알림 속도 개선(11분 → 30초)으로 푸시 알림 시스템 성능 95% 향상 ([*관련 블로깅*](https://taetaetae.github.io/2019/01/02/faster-parallel-processes/))<br>
-          ㆍ 기존 순차 처리 방식에서 **병렬 처리 및 메시지 큐(RabbitMQ) 활용**을 통해 대량 트래픽 처리 성능 개선<br>
+          ㆍ 기존 프로세스의 문제점 도출, 플래닝 및 설계, 구현 및 단계적 배포까지 전 과정 참여<br>
+          ㆍ 메시지 큐(RabbitMQ) 방식의 병렬 처리 방식을 개선하여 고성능 처리 최적화<br>
           ㆍ Redis 키 파티셔닝을 통해 알림 전송 속도 최적화 및 네트워크 부하 감소<br>
-          - **서비스 전면 개편: Monolithic → MSA 구조 전환** 으로 확장성 및 장애 대응력 강화<br>
-          ㆍ **EDA, Circuit Breaker, 모듈 분리**를 적용하여 마이크로서비스 간 결합도를 낮추고 장애 격리 가능하도록 설계<br>
+          - 서비스 전면 개편: Monolithic → MSA 구조 전환 으로 확장성 및 장애 대응력 강화<br>
+          ㆍ 이벤트 기반 아키텍쳐 도입, Circuit Breaker, 모듈 분리를 적용하여 마이크로서비스 간 결합도를 낮추고 장애 격리 가능하도록 설계<br>
           ㆍ Kubernetes 기반 컨테이너 오케스트레이션 도입으로 배포 유연성 확보<br>
-          - **CI/CD 자동화 및 코드 품질 개선**을 위한 정적 분석 도구(SonarQube) 및 온라인 코드 리뷰 도입 ([*관련 블로깅*](https://taetaetae.github.io/2018/02/08/jenkins-sonar-github-integration/))<br>
-          ㆍ Jenkins, GitHub Actions을 활용한 배포 자동화로 코드 안정성 및 개발 생산성 향상<br>
-          - **Batch 무중단 배포 적용**을 통해 서비스 연속성 유지 및 장애 최소화 ([*관련 블로깅*](https://taetaetae.github.io/2019/10/13/batch-nondisruptive-deploy/))<br>
+          - CI/CD 자동화 및 코드 품질 개선을 위한 정적 분석 도구(SonarQube) 및 온라인 코드 리뷰 도입 ([*관련 블로깅*](https://taetaetae.github.io/2018/02/08/jenkins-sonar-github-integration/))<br>
+          - Batch 무중단 배포 적용을 통해 서비스 연속성 유지 및 장애 최소화 ([*관련 블로깅*](https://taetaetae.github.io/2019/10/13/batch-nondisruptive-deploy/))<br>
 
           **네이버페이 카드 직가맹 시스템 (Payment Gateway) / (2016.04~2018.08)**<br>
           - 프로젝트 초기 환경 셋팅 (빌드/배포 파이프라인 구축, CI/CD 설계, 서버 및 인프라 구성)<br>
