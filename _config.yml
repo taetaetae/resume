@@ -100,7 +100,7 @@ content:
           - 프로젝트 초기 환경 셋팅 (빌드/배포 파이프라인 구축, CI/CD 설계, 서버 및 인프라 구성)<br>
           - Elastic Stack 기반 비즈니스 통합 모니터링 시스템 구축으로 서비스 장애 감지 및 이상 탐지 자동화 ([*관련 블로깅*](https://d2.naver.com/helloworld/3585246))<br>
           - 거래비 하락 모니터링 시스템 구축을 통해 비정상 거래 패턴 자동 감지 및 대응 시스템 마련 ([*관련 블로깅*](https://taetaetae.github.io/2018/05/31/anomaly-detection/))<br>
-          - 트랜잭션 추적 및 성능 모니터링을 위한 분산 트레이싱/MDC(Mapped Diagnostic Context) 도입으로 결제 시스템 안정성 강화<br>
+          - 트랜잭션 추적 및 성능 모니터링을 위한 분산 트레이싱 도입으로 결제 시스템 안정성 강화<br>
           
           **네이버 날씨**ㆍ[*https://weather.naver.com*](https://weather.naver.com/)ㆍ<small>(2014.05~2016.04)</small><br>
           - CP사 수신 데이터 모니터링 툴 개발로 데이터 정합성 검증 및 장애 감지 자동화<br>
@@ -116,7 +116,7 @@ content:
           **네이버 게임**ㆍ[*https://game.naver.com*](https://game.naver.com/)<br>
           - 네이버 아이디 기반 게임 채널링 서비스 운영 및 게임사별 연동 최적화
           - NHN Entertainment → NHN 으로 서비스 이관하는 과정에서 DB 마이그레이션 및 서버 이전을 안정적으로 수행
-          - 불필요한 초기 로딩을 제거하고 지연 로딩을 적용하여 서비스 메인 페이지 성능 개선(2.1초 → 1.7초), 로딩 속도 19% 단축
+          - 불필요한 초기 로딩 제거 및 지연 로딩 적용, 서비스 메인 페이지 성능 개선(2.1초 → 1.7초), 로딩 속도 19% 단축
           
       - layout: top-left
         title: 대한민국 육군 장교 (ROTC)
