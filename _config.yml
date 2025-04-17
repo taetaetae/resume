@@ -132,6 +132,7 @@ content:
           - 서비스 전면 개편: Monolithic → MSA 구조 전환 으로 확장성 및 장애 대응력 강화<br>
           ㆍ EDA 도입, Circuit Breaker, 모듈 분리를 적용하여 마이크로서비스 간 결합도를 낮추고 장애 격리 가능하도록 설계<br>
           ㆍ Kubernetes 기반 컨테이너 오케스트레이션 도입으로 배포 유연성 확보<br>
+          - 검색/피드 파트장 역임 : 서비스 안정화 및 이벤트 기반의 검색/피드 시스템 설계<br>
           - CI/CD 자동화 및 코드 품질 개선을 위한 정적 분석 도구(SonarQube) 및 온라인 코드 리뷰 도입 ([*관련 블로깅*](https://taetaetae.github.io/2018/02/08/jenkins-sonar-github-integration/))<br>
           - Batch 무중단 배포 적용을 통해 서비스 연속성 유지 및 장애 최소화 ([*관련 블로깅*](https://taetaetae.github.io/2019/10/13/batch-nondisruptive-deploy/))<br>
           <div style="height: 1em;"></div>
