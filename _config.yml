@@ -69,7 +69,7 @@ content:
         description: | # this will include new lines to allow paragraphs
           **네이버 쇼핑**ㆍ[*https://shopping.naver.com*](https://shopping.naver.com)ㆍ<small>(2022.02~현재)</small><br>
           - 신규 서비스(퀵커머스) 상품 API 개발 및 개발 TF 내 레이어 아키텍처/테스트 코드 컨벤션 정립<br>
-          ㆍ 배경 : 무분별한 레이어 간 호출로 인해 모듈 책임이 모호해지고, 테스트 코드 부재로 인한 잦은 리그레션 처리 필요<br>
+          ㆍ 배경 : 무분별한 레이어 간 호출로 인해 모듈 책임이 모호해지고, 테스트 코드 부재로 인한 잦은 리그레션 필요<br>
           ㆍ 진행<br>
           ㅤㆍ레이어 아키텍처 정립 : 각 레이어간 명확한 책임 분리를 리팩토링 및 제안하고 팀 내 개발 컨벤션 확립<br>
           ㅤㆍArchUnit 기반 피트니스 함수를 CI 파이프라인에 연동, 레이어 간 의존성 위반 자동 검증<br>
@@ -134,7 +134,8 @@ content:
           ㆍ Kubernetes 기반 컨테이너 오케스트레이션 도입으로 배포 유연성 확보<br>
           - CI/CD 자동화 및 코드 품질 개선을 위한 정적 분석 도구(SonarQube) 및 온라인 코드 리뷰 도입 ([*관련 블로깅*](https://taetaetae.github.io/2018/02/08/jenkins-sonar-github-integration/))<br>
           - Batch 무중단 배포 적용을 통해 서비스 연속성 유지 및 장애 최소화 ([*관련 블로깅*](https://taetaetae.github.io/2019/10/13/batch-nondisruptive-deploy/))<br>
-
+          <div style="height: 1em;"></div>
+          
           **네이버페이 카드 직가맹 시스템 (Payment Gateway)**ㆍ<small>(2016.04~2018.08)</small><br>
           - 프로젝트 초기 환경 셋팅 (빌드/배포 파이프라인 구축, CI/CD 설계, 서버 및 인프라 구성)<br>
           - Elastic Stack 기반 비즈니스 통합 모니터링 시스템 구축으로 서비스 장애 감지 및 이상 탐지 자동화 ([*관련 블로깅*](https://d2.naver.com/helloworld/3585246))<br>
