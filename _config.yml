@@ -65,7 +65,7 @@ content:
       - layout: top-left
         title: NAVER Corporation
         sub_title: Software Engineer
-        caption: 2014.05 ~ 현재
+        caption: 2014.05 ~ 2025.08
         description: | # this will include new lines to allow paragraphs
           **네이버 쇼핑**ㆍ[*https://shopping.naver.com*](https://shopping.naver.com)ㆍ<small>(2022.02~현재)</small><br>
           - 신규 서비스(퀵커머스) 상품 API 개발 및 개발 TF 내 레이어 아키텍처/테스트 코드 컨벤션 정립<br>
